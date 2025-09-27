@@ -138,21 +138,30 @@
         </div>
         
         <div class="server-options">
-            <div class="server-card" onclick="redirectToRecharge('a')">
+            <div class="server-card" onclick="redirectToRecharge('26')">
                 <div class="server-icon">
                     <span>A</span>
                 </div>
-                <div class="server-title">龙争虎斗A战区</div>
-                <div class="server-desc">进入A战区充值页面，安全便捷，即时到账</div>
+                <div class="server-title">龙争虎斗26号区</div>
+                <div class="server-desc">进入26号区充值页面，安全便捷，即时到账</div>
                 <button class="server-button">立即充值</button>
             </div>
             
-            <div class="server-card" onclick="redirectToRecharge('one')">
+            <div class="server-card" onclick="redirectToRecharge('24')">
                 <div class="server-icon">
-                    <span>一</span>
+                    <span>A</span>
                 </div>
-                <div class="server-title">龙争虎斗一战区</div>
-                <div class="server-desc">进入一战区充值页面，安全便捷，即时到账</div>
+                <div class="server-title">龙争虎斗24号区</div>
+                <div class="server-desc">进入24号区充值页面，安全便捷，即时到账</div>
+                <button class="server-button">立即充值</button>
+            </div>
+
+            <div class="server-card" onclick="redirectToRecharge('1-2')">
+                <div class="server-icon">
+                    <span>A</span>
+                </div>
+                <div class="server-title">龙争虎斗1-2区</div>
+                <div class="server-desc">进入1-2区充值页面，安全便捷，即时到账</div>
                 <button class="server-button">立即充值</button>
             </div>
         </div>
@@ -169,12 +178,15 @@
     <script>
         function redirectToRecharge(server) {
             // 根据选择的战区跳转到相应的充值页面
-            if (server === 'a') {
-                // A战区充值链接
-                window.location.href = 'https://pay.jufutongzf.com/game/Group/272AD2127AD18C57';
-            } else if (server === 'one') {
-                // 一战区充值链接
-                window.location.href = 'https://pay.jufutongzf.com/game/Group/96FB4C23771C4DB0';
+            if (server === '26') {
+                // 26号区充值链接
+                window.location.href = 'https://pay.jufutongzf.com/game/Choose/0FC7BED167EFF98785BC3CAD500CCFD5';
+            } else if (server === '24') {
+                // 24号区充值链接
+                window.location.href = 'https://pay.jufutongzf.com/game/Choose/4CE320F12538D511CA71705A8349F0DD';
+            }else if (server === '1-2') {
+                // 24号区充值链接
+                window.location.href = 'https://pay.jufutongzf.com/game/Choose/C208158CF1C2939E6A84FA7A56C73AF5';
             }
         }
     </script>
