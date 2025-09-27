@@ -158,7 +158,30 @@
             margin-left: 30px;
         }
 
+        /* QQ群浮动按钮样式 */
+        .float-qq-group {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
 
+        .float-qq-group a {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: url('QQ群.png') no-repeat;
+            background-size: contain;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .float-qq-group a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
 
         /* 响应式调整 */
         @media (max-width: 768px) {
@@ -229,7 +252,10 @@
                 </div>
 
                 <div class="center-text">
-                    <a href="https://pay.jufutongzf.com/game/Group/272AD2127AD18C57" target="_blank">
+                    <!-- <a href="https://pay.jufutongzf.com/game/Group/272AD2127AD18C57" target="_blank">
+                    <img src="chongzhi.gif" alt="Top Banner">
+                </a> -->
+                <a href="chongzhi.html" target="_blank">
                     <img src="chongzhi.gif" alt="Top Banner">
                 </a>
                 </div>
@@ -324,6 +350,11 @@
             <p><strong>2003独家复古纯净金币版传奇世界</strong></p>
             <p>2003独家复古纯净金币版传奇世界仿盛大小极品,完全免费,推荐选择官方进行游戏</p>
         </footer>
+    </div>
+
+    <!-- QQ群浮动按钮 -->
+    <div class="float-qq-group">
+        <a href="https://qm.qq.com/q/uAaO01EFCo" target="_blank" title="QQ群: 797712234"></a>
     </div>
 
     <audio id="music" src="yin.mp3" autoplay loop></audio>
